@@ -1,0 +1,298 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0 0 10px 1px darkblue; }
+  .header--text {
+    font-size: 2.5em;
+    text-transform: uppercase; }
+
+.wrapper {
+  margin: 50px auto 0;
+  max-width: 900px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.about {
+  padding: 10px;
+  margin: 20px 0;
+  width: 100%;
+  box-shadow: 0 0 10px 1px darkblue; }
+  .about--text {
+    font-size: 2em;
+    text-transform: uppercase; }
+  .about--texts {
+    font-size: 1.5em; }
+
+.example {
+  padding: 20px;
+  margin: 10px 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 0 10px 1px darkblue; }
+  .example--text {
+    font-size: 2em;
+    text-transform: uppercase; }
+  .example--texts {
+    font-size: 1.5em; }
+  .example--gif {
+    margin: 10px;
+    height: 256px; }
+
+.about-me {
+  padding: 20px 20px 0;
+  margin: 10px 0 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 0 10px 1px darkblue; }
+  .about-me--text {
+    font-size: 2em;
+    text-transform: uppercase; }
+  .about-me--href {
+    font-size: 1.5em; }
+  .about-me--img {
+    margin: 10px;
+    height: 256px;
+    border-radius: 50%; }
+
+.button-for-piskel {
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+  padding: 10px;
+  background-color: darkblue;
+  border-radius: 10px;
+  transition: all .5s; }
+  .button-for-piskel:hover {
+    background-color: blue;
+    box-shadow: 0 0 10px 1px darkblue; }
+  .button-for-piskel-text {
+    font-size: 1.5em;
+    color: azure;
+    cursor: pointer; }
+
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.87); }
+  .header__title {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    color: rgba(0, 0, 0, 0.87); }
+
+.wrapper__main {
+  height: 100vh;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center; }
+
+.control-panels {
+  min-width: 300px;
+  max-width: 350px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.sheet {
+  list-style: none;
+  max-width: 230px;
+  width: 100%;
+  padding-bottom: 30px;
+  margin: 10px;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.87); }
+  .sheet__item {
+    padding: 10px 15px 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    transition: all .5s ease; }
+    .sheet__item:hover {
+      cursor: pointer;
+      transform: scale(1.1); }
+  .sheet__img {
+    max-width: 30px;
+    min-width: 25px;
+    width: 100%; }
+  .sheet__color {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #000; }
+  .sheet__name {
+    padding-left: 25px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+    color: rgba(0, 0, 0, 0.541327); }
+    .sheet__name--active {
+      color: green; }
+
+input[type=color] {
+  width: 200px;
+  display: none; }
+
+.draw-panel {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center; }
+
+.canvas {
+  height: 512px;
+  width: 512px;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.87);
+  transition: all .5s; }
+  .canvas:hover {
+    box-shadow: 0 0 20px 1px green; }
+
+.pannel {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.animation-canvas {
+  margin: 5px;
+  height: 206px;
+  width: 206px;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.87); }
+
+.size {
+  list-style: none;
+  width: 230px;
+  margin: 5px;
+  padding: 10px 0;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.87); }
+  .size__item {
+    font-size: 24px;
+    line-height: 30px;
+    padding: 5px;
+    color: rgba(0, 0, 0, 0.541327);
+    transition: all .5s ease;
+    text-align: center; }
+    .size__item--active {
+      color: green; }
+    .size__item:hover {
+      cursor: pointer;
+      transform: scale(1.1); }
+
+.pixel-size {
+  list-style: none;
+  width: 230px;
+  margin: 5px;
+  padding: 10px 0;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.87); }
+  .pixel-size__item {
+    font-size: 24px;
+    line-height: 30px;
+    padding: 5px;
+    color: rgba(0, 0, 0, 0.541327);
+    transition: all .5s ease;
+    text-align: center; }
+    .pixel-size__item--active {
+      color: green; }
+    .pixel-size__item:hover {
+      cursor: pointer;
+      transform: scale(1.1); }
+
+.fraem-to-seconds {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 230px;
+  margin: 5px;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.87); }
+  .fraem-to-seconds--text {
+    margin: 10px auto;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.87); }
+
+.button {
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.87);
+  padding: 5px;
+  border-radius: 5px;
+  transition: all .5s; }
+  .button:hover {
+    cursor: pointer;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.87); }
+
+.fraems {
+  min-width: 150px;
+  max-height: 80%;
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.87);
+  transition: all .5s;
+  overflow-y: scroll; }
+  .fraems-text {
+    margin: 10px auto;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.87); }
+
+.fraem {
+  position: relative;
+  height: 100px;
+  width: 100px;
+  margin: 10px auto;
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.87);
+  transition: all .5s; }
+  .fraem:hover {
+    box-shadow: 0 0 10px 1px yellowgreen;
+    cursor: pointer; }
+  .fraem-active {
+    box-shadow: 0 0 10px 1px green; }
+
+.delFraem {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 20px;
+  width: 20px;
+  background-color: red;
+  transition: all .5s; }
+  .delFraem:hover {
+    box-shadow: 0 0 3px 1px darkred;
+    cursor: pointer; }
+
