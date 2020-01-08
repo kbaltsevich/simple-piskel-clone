@@ -168,6 +168,11 @@ input[type=color] {
   width: 200px;
   display: none; }
 
+label {
+  width: 100%;
+  display: flex;
+  align-items: center; }
+
 .draw-panel {
   display: flex;
   width: 100%;
